@@ -27,7 +27,7 @@ public class ParkingBoy {
     	}
     	Car car = parkingLot.getCarByTicket(ticket);
     	if(car == null) {
-    		this.lastErrorMessage = "Null parking ticket.";
+    		this.lastErrorMessage = "Unrecognized parking ticket.";
     		return null;
     	}
         return car;
