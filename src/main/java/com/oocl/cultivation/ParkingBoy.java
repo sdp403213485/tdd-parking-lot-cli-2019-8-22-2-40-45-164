@@ -12,7 +12,7 @@ public class ParkingBoy {
     public ParkingTicket park(Car car) {
         // TODO: Please implement the method
     	if(parkingLot.getAvailableParkingPosition() == 0) {
-    		this.lastErrorMessage = "Parking lot is full.";
+    		this.lastErrorMessage = "The parking lot is full.";
     		return null;
     	}
     	this.lastErrorMessage = null;
@@ -22,7 +22,7 @@ public class ParkingBoy {
     public Car fetch(ParkingTicket ticket) {
         // TODO: Please implement the method
     	if(ticket == null) {
-    		this.lastErrorMessage = "Provide parking ticket.";
+    		this.lastErrorMessage = "Please provide your parking ticket.";
     		return null;
     	}
     	Car car = parkingLot.getCarByTicket(ticket);
